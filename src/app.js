@@ -50,7 +50,9 @@ async function fetchCountryInformation() {
 //- Om onze ul met id countryList van inhoud te voorzien gebruiken we .innerHTML
 //- Om alle met onze .sort opgehaalde data zichtbaar te maken gebruiken we de .map methode
 //- Tussen de haakjes geven we deze een naam het is conventie om deze in enkelvoud te geven
-//- Met template literals injecteren we de code en maken de bijbehorende html elements h3/P/span met img tags
+//- We gaan een template string maken dus moeten we onze list voorzien van back-tic's anders werkt hij niet!!!!!!
+//- In onze template string maken we de bijbehorende html elements h3/P/span met img tag
+//- Met template literals injecteren we de code
 //- We koppelen ons css bestand aan countries-
 //- We kunnen met += er steeds een land aan toevoegen (met alleen = laat hij steeds een nieuwe zien)
         response.data.map((country) => {
