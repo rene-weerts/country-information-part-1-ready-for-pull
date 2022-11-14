@@ -1,3 +1,4 @@
+//- Hiermee koppelen we ons app.js bestand aan package.json en axios
 import axios from "axios" ;
 
 console.log("Hallo daar");
