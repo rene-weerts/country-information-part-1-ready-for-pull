@@ -6,7 +6,7 @@ console.log("Hallo daar");
 //- Try catch blok maken om errors af te vangen
 //- In het try blok gaan we de response afvangen van axios
 
-//- Asynchrone functie
+//- Asynchrone functie om de response van de back-end binnen te krijgen
 async function fetchCountryInformation() {
 
 //- Destructuren en  2 variabele maken van de link https://restcountries.com/-v2-all
@@ -18,7 +18,7 @@ async function fetchCountryInformation() {
     try {
 //- Omdat we gebruik maken van een asynchrone functie moeten we een await maken
 //         await
-//- Vervolgens de request zelf doen met axios.get
+//- Vervolgens de request met axios.get
 //         await axios.get()
 //- Vervolgens de link plakken tussen haakjes met aanhalingstekens "https://restcountries.com/v2-all"
 //- Let op!! deze link niet https://restcountries.com/#api-endpoints-v2-all is adres van web-pagina van api
@@ -57,8 +57,6 @@ async function fetchCountryInformation() {
 //- We kunnen met += er steeds een land aan toevoegen (met alleen = laat hij steeds een nieuwe zien)
         response.data.map((country) => {
             countryList.innerHTML +=
-
-
                 `<li>
                                     <h3 class="countries-${country.region}">${country.name}</h3>
                                     <p>Population of ${country.population} </p>
